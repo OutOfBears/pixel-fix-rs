@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        rust_version: [nightly, 1.72.0]
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: ${{ matrix.rust_version }}
+          override: true
+          profile: minimal
+
+      - name: Build
+        run: cargo build --locked --verbose
+
+  lint:
+    name: Rustfmt & Clippy
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        rust_version: [nightly, 1.72.0]
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Install Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: ${{ matrix.rust_version }}
+          override: true
+          components: rustfmt, clippy
+
+      - name: Rustfmt
+        run: cargo fmt -- --check
+
+      - name: Clippy
+        run: cargo clippy

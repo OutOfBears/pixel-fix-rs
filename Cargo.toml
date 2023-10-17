@@ -1,0 +1,17 @@
+cargo-features = ["different-binary-name"]
+
+[package]
+name = "pixel-fix-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.33.0", features = ["full"] }
+image = "0.24.7"
+spade = "2.2.0"
+
+[[bin]]
+name = "pixel-fix-rs"
+filename = "pixelfix"
