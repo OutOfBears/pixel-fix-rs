@@ -1,12 +1,18 @@
 
 <div align="center">
-<h1 style="font-size: 4em">Pixel Fix Rs</h1>
-<!-- # Pixel Fix RS -->
+	<h1 style="font-size: 6em">pixel-fix-rs</h1>
+</div>
+
+<div>&nbsp;</div>
+
+<div align="center">
+    <a href="https://github.com/Nexur/pixel-fix-rs/actions"><img src="https://github.com/Nexure/pixel-fix-rs/workflows/CI/badge.svg" alt="Actions status" /></a>
+    <a href="https://crates.io/crates/pixel-fix"><img src="https://img.shields.io/crates/v/pixel-fix.svg?label=latest%20release" alt="Latest version" /></a>
 </div>
 
 <hr />
 
-**Pixel Fix RS** is a rust port of the popular utility **"Pixelfix"**. This utility is designed to change the colors of completely transparent pixels in an image to match the color of the nearest non-transparent pixel.
+**pixel-fix-rs** is a rust port of the popular utility **"Pixelfix"**. This utility is designed to change the colors of completely transparent pixels in an image to match the color of the nearest non-transparent pixel.
 
 ### More Information:
 - You can find extra information at the original tools respository [here](https://github.com/Corecii/Transparent-Pixel-Fix/blob/master/README.md#more-info)
