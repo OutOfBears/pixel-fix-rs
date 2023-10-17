@@ -7,7 +7,7 @@
 
 <div align="center">
     <a href="https://github.com/Nexur/pixel-fix-rs/actions"><img src="https://github.com/Nexure/pixel-fix-rs/workflows/CI/badge.svg" alt="Actions status" /></a>
-    <a href="https://crates.io/crates/pixel-fix"><img src="https://img.shields.io/crates/v/pixel-fix.svg?label=latest%20release" alt="Latest version" /></a>
+    <a href="https://crates.io/crates/pixel-fix"><img src="https://img.shields.io/crates/v/pixel-fix-rs.svg?label=latest%20release" alt="Latest version" /></a>
 </div>
 
 <hr />
