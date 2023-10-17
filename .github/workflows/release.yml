@@ -27,7 +27,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        rust_version: [nightly, 1.72.0]
+        rust_version: nightly
         # https://doc.rust-lang.org/rustc/platform-support.html
         include:
           - host: linux

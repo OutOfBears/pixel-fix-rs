@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        rust_version: [nightly, 1.72.0]
+        rust_version: nightly
 
     steps:
       - uses: actions/checkout@v3
@@ -39,7 +39,7 @@ jobs:
 
     strategy:
       matrix:
-        rust_version: [nightly, 1.72.0]
+        rust_version: nightly
 
     steps:
       - uses: actions/checkout@v3
