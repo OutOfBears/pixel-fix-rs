@@ -27,6 +27,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        rust_version: [nightly, 1.72.0]
         # https://doc.rust-lang.org/rustc/platform-support.html
         include:
           - host: linux
@@ -53,6 +54,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       BIN: pixelfix
+
     steps:
       - uses: actions/checkout@v3
         with:
@@ -68,7 +70,7 @@ jobs:
       - name: Install Rust
         uses: actions-rs/toolchain@v1
         with:
-          toolchain: stable
+          toolchain: ${{ matrix.rust_version }}
           target: ${{ matrix.target }}
           override: true
           profile: minimal
