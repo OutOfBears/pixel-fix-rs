@@ -3,7 +3,17 @@ cargo-features = ["different-binary-name"]
 [package]
 name = "pixel-fix-rs"
 version = "0.1.0"
+repository = "https://github.com/Nexure/pixel-fix-rs"
+authors = ["Jack Fox <jack@infernal.io>"]
+description = "A utility to fix alpha in images for Roblox!"
+categories = ["command-line-utilities"]
+keywords = ["roblox", "pixelfix", "pixel-fix", "pixel-fix-rs", "pixelfixrs"]
+readme = "README.md"
+license-file = "LICENSE"
 edition = "2021"
+rust-version = "1.72"
+include = ["**/*.rs", "Cargo.toml"]
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
